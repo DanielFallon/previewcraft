@@ -1,0 +1,6 @@
+language: go
+
+script: ./scripts/build.sh
+
+after_success:
+  - ./scripts/upload_whitelist.sh
